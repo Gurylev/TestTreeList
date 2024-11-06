@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:TestTreeList.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="TestTreeList.Views.MainWindow"
+		xmlns:mxtl="https://schemas.eremexcontrols.net/avalonia/treelist"
+		xmlns:mxe="https://schemas.eremexcontrols.net/avalonia/editors"
+		xmlns:mxb="https://schemas.eremexcontrols.net/avalonia/bars"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="TestTreeList">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+	<mxtl:TreeListControl
+				x:Name="wgtVarTable"
+				Grid.Row="1"
+				ItemsSource="{Binding Variables}"
+				AllowEditing="True"
+				AllowSorting="True"
+				EditorShowMode="PointerPressedInFocusedCell"				
+				SearchPanelDisplayMode="Always"
+				FilterMode="ShowBranchesWithMatches"
+				ShowAutoFilterRow="True">		
+		<mxtl:TreeListControl.Columns>
+			<mxtl:TreeListColumn Header="Имя" FieldName="Name"/>
+			<mxtl:TreeListColumn Header="Скоуп" FieldName="Scope"/>
+		</mxtl:TreeListControl.Columns>
+	</mxtl:TreeListControl>
+</Window>

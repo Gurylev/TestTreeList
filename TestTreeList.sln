@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTreeList", "TestTreeList\TestTreeList.csproj", "{DB1234E9-E628-4D89-B693-19635D9218D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB1234E9-E628-4D89-B693-19635D9218D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB1234E9-E628-4D89-B693-19635D9218D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB1234E9-E628-4D89-B693-19635D9218D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB1234E9-E628-4D89-B693-19635D9218D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81DF5182-EE0A-4C42-800B-3A460E0791D6}
+	EndGlobalSection
+EndGlobal
